@@ -34,6 +34,12 @@ spinDelayMs(uint32_t ms)
     }
 }
 
+void
+__error__(const char * filename, int line)
+{
+    _assert_failed("__error__(file,line) called from TivaDriverLib", filename, line);
+}
+
 
 void 
 _assert_failed (const char *assertion, const char *file, unsigned int line)
