@@ -298,9 +298,9 @@ _pidPositionServo( void *notUsed )
 
     TickType_t xLastWakeTime = xTaskGetTickCount();
 
-    double Kp = 0.125; // 0.125;
-    double Ki = 0.002; // 0.002;
-    double Kd = 0.5; //0.5;
+    double Kp = 0.1; 
+    double Ki = 0.00;
+    double Kd = 0.0;
 
     while(1)
     {
